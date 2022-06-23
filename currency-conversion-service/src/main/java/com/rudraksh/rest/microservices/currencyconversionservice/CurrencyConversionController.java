@@ -39,7 +39,7 @@ public class CurrencyConversionController {
 		
 		
 		CurrencyConversion currencyConversion= currencyExchangeProxy.retrieveExchangeValue(from, to);
-		return null;
+	
 		return new CurrencyConversion(currencyConversion.getId(), from, to, quantity, currencyConversion.getConversionMultiple(), quantity.multiply(currencyConversion.getConversionMultiple()),currencyConversion.getEnvironment());
 	}
 }
